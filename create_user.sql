@@ -8,6 +8,18 @@ Create table users (
 	city varchar(20),
 	pincode integer);
 
+--Create product table
+
+Create table products (
+	id serial primary key,
+	price numeric,
+	color varchar(50),
+	productType varchar(10),
+	rating numeric(50),
+	created Date ,
+	quantity varchar(20),
+	isAvailability char);
+
 ---Implementation of the above query in backend is given below
 
 CREATE TABLE IF NOT EXISTS public.products
